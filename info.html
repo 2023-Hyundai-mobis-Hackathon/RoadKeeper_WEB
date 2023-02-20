@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang=kr dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>도로 안전 지킴이</title>
+    <link rel="stylesheet" href="css\info.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="asset\logo.png" class="logo" onclick="location.href='index.html'">
+      <h1>도로 안전 지킴이 관리 시스템</h1>
+      <div class="tabContainer">
+        <button type="button" name="button" class="tab" onclick="location.href='archive.html'">기록</button>
+        <button type="button" name="button" class="tab">정보</button>
+        <button type="button" name="button" class="tab" onclick="location.href='plot.html'">통계</button>
+      </div>
+    </div>
+    <div class="pageContainer">
+      <button class="userBtn" id="userBtn" onclick="location.href='user.html'">사용자</button>
+      <button class="carBtn" id="carBtn" onclick="location.href='road.html'">도로</button>
+      <button class="pbvBtn" id="pbvBtn" onclick="location.href='pbv.html'">PBV</button>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</html>

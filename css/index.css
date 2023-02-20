@@ -1,0 +1,145 @@
+html {
+  background-color: #181823;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+button {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.header {
+  padding-left: 10px;
+  heigth: 100px;
+  display: grid;
+  grid-template-columns: 500px 500px 400px;
+  grid-template-rows: 100px;
+}
+
+.logo {
+  width: 150px;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.tabContainer {
+  display: inline-block;
+  margin-top: 18px;
+  padding-left: 70px;
+}
+
+.tab {
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+  background-color: #181823;
+  border: none;
+  color: white;
+}
+
+.numberContainer {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+  background-color: #537FE7;
+  width: 335px;
+  text-align: center;
+  border-radius: 20px;
+  column-gap: 10px;
+}
+
+h2 {
+  color: white;
+  font-size: 17px;
+  text-align: center;
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+  padding-left: 100px;
+}
+
+.carContainer {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+  background-color: #537FE7;
+  width: 335px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.middle {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 500px 500px 400px;
+}
+
+.carNumber {
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.leftContainer {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: -50px;
+}
+
+.leftbottomTab {
+  margin-top: 50px;
+}
+
+.middleContainer {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.rightContainer {
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: -50px;
+}
+
+h5 {
+  color: white;
+  font-size: 20px;
+  padding-left: 100px;
+}
+
+.weatherContainer {
+  background-color: #537FE7;
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+}
+
+.rightbottomTab {
+  margin-top: 50px;
+}
+
+.newsContainer {
+  background-color: #537FE7;
+  width: 300px;
+  color: white;
+  height: 150px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.news {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}

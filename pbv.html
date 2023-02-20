@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang=kr dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>도로 안전 지킴이</title>
+    <link rel="stylesheet" href="css\pbv.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="asset\logo.png" class="logo" onclick="location.href='index.html'">
+      <h1>도로 안전 지킴이 관리 시스템</h1>
+      <div class="tabContainer">
+        <button type="button" name="button" class="tab" onclick="location.href='archive.html'">기록</button>
+        <button type="button" name="button" class="tab" onclick="location.href='info.html'">정보</button>
+        <button type="button" name="button" class="tab" onclick="location.href='plot.html'">통계</button>
+      </div>
+    </div>
+    <div class="middle">
+      <div class="mapContainer">
+        <img src="asset\map.png" alt="" class="mapImg">
+        <img src="asset\car.png" alt="" class="carImg" id="car1">
+      </div>
+      <div class="tableContainer">
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>상태</th>
+              <th>위치</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="tr1">
+              <td>01</td>
+              <td>운행 중</td>
+              <td>경부고속도로</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>수리 중</td>
+              <td>PBV 수리 센터</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="js\pbv.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</html>

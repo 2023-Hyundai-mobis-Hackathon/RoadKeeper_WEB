@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang=kr dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>도로 안전 지킴이</title>
+    <link rel="stylesheet" href="css\user.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="asset\logo.png" class="logo" onclick="location.href='index.html'">
+      <h1>도로 안전 지킴이 관리 시스템</h1>
+      <div class="tabContainer">
+        <button type="button" name="button" class="tab" onclick="location.href='archive.html'">기록</button>
+        <button type="button" name="button" class="tab" onclick="location.href='info.html'">정보</button>
+        <button type="button" name="button" class="tab" onclick="location.href='plot.html'">통계</button>
+      </div>
+    </div>
+    <div class="tableContainer">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>도로</th>
+            <th>주행 거리</th>
+            <th>발견 개수</th>
+            <th>누적 점수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="tr1">
+            <td>01</td>
+            <td>경부고속도로</td>
+            <td>350234KM</td>
+            <td>65</td>
+            <td>103</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</html>

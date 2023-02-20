@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang=kr dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>도로 안전 지킴이</title>
+    <link rel="stylesheet" href="css\index.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="asset\logo.png" class="logo">
+      <h1>도로 안전 지킴이 관리 시스템</h1>
+      <div class="tabContainer">
+        <button type="button" name="button" class="tab" onclick="location.href='archive.html'">기록</button>
+        <button type="button" name="button" class="tab" onclick="location.href='info.html'">정보</button>
+        <button type="button" name="button" class="tab" onclick="location.href='plot.html'">통계</button>
+      </div>
+    </div>
+    <div class="middle">
+      <div class="leftContainer">
+        <div class="lefttopTab">
+          <h4>현재 신고 접수 현황</h4>
+          <div class="numberContainer" onclick="location.href='archive.html'">
+            <h2>전체</h2>
+            <h2>신속 처리 대상</h2>
+            <h2>처리 완료</h2>
+            <h2 id="num1">834</h2>
+            <h2 id="num2">121</h2>
+            <h2 id="num3">713</h2>
+          </div>
+        </div>
+        <div class="leftbottomTab">
+          <h4>현재 PBV 작동 현황</h4>
+          <div class="carContainer" onclick="location.href='pbv.html'">
+            <h2 class="carNumber">전체</h2>
+            <h2 class="carNumber">작동 중</h2>
+            <h2 class="carNumber">수리 중</h2>
+            <h2 class="carNumber" id="num4">150</h2>
+            <h2 class="carNumber" id="num5">120</h2>
+            <h2 class="carNumber" id="num6">30</h2>
+          </div>
+        </div>
+      </div>
+      <div class="middleContainer">
+        <img src="asset\map.png">
+      </div>
+      <div class="rightContainer">
+        <div class="righttopTab" onclick="window.open('https://www.weather.go.kr/w/weather/forecast/short-term.do')">
+          <h5>현재 날씨</h5>
+          <div class="weatherContainer">
+            <h3 id="temp"></h3>
+            <h3 id="feel"></h3>
+            <h3 id="speed"></h3>
+          </div>
+        </div>
+        <div class="rightbottomTab">
+          <h5>실시간 교통정보</h5>
+          <div class="newsContainer">
+            <h3 id="news1" class="news"></h3>
+            <h3 id="news2" class="news"></h3>
+            <h3 id="news3" class="news"></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js\index.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</html>
