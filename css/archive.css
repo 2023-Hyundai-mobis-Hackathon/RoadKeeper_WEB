@@ -9,7 +9,6 @@ button {
 
 .header {
   padding-left: 10px;
-  heigth: 100px;
   display: grid;
   grid-template-columns: 500px 500px 400px;
   grid-template-rows: 100px;

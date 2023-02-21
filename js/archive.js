@@ -56,8 +56,8 @@ getJSON('http://ec2-35-77-220-13.ap-northeast-1.compute.amazonaws.com/archive/da
     } else {
 
       api = data.data;
-      if(api.length > 20) {
-        api = api.slice(0, 20);
+      if(api.length > 15) {
+        api = api.slice(0, 15);
       }
       for(var i = 0; i < api.length; i++) {
         if(api[i].category == "Pothole on road") {
@@ -370,106 +370,6 @@ getJSON('http://ec2-35-77-220-13.ap-northeast-1.compute.amazonaws.com/archive/da
           detailContainer.style.display = "block";
           buttonContainer.style.display = "grid";
           sessionStorage.loca = api[14].location;
-        });
-
-        var tr16 = document.getElementById("tr16");
-        tr16.addEventListener("click", function() {
-          img1.style.display = "none";
-          img2.style.display = "none";
-          img3.style.display = "none";
-          imageContainer.style.display = "none";
-          detailContainer.style.display = "none";
-          buttonContainer.style.display = "none";
-          var img = document.getElementById(api[15].category)
-          img.style.display = "block";
-          roadText.innerText = "도로: " + api[15].location;
-          dangerText.innerText = "위험 요소 종류: " + category[api[15].category];
-          percentageText.innerText = "위험도: " + api[15].danger_score + "%";
-          accuracyText.innerText = "정확도: " + api[15].accuracy;
-          imageContainer.style.display = "block";
-          detailContainer.style.display = "block";
-          buttonContainer.style.display = "grid";
-          sessionStorage.loca = api[15].location;
-        });
-
-        var tr17 = document.getElementById("tr17");
-        tr17.addEventListener("click", function() {
-          img1.style.display = "none";
-          img2.style.display = "none";
-          img3.style.display = "none";
-          imageContainer.style.display = "none";
-          detailContainer.style.display = "none";
-          buttonContainer.style.display = "none";
-          var img = document.getElementById(api[16].category)
-          img.style.display = "block";
-          roadText.innerText = "도로: " + api[16].location;
-          dangerText.innerText = "위험 요소 종류: " + category[api[16].category];
-          percentageText.innerText = "위험도: " + api[16].danger_score + "%";
-          accuracyText.innerText = "정확도: " + api[16].accuracy;
-          imageContainer.style.display = "block";
-          detailContainer.style.display = "block";
-          buttonContainer.style.display = "grid";
-          sessionStorage.loca = api[16].location;
-        });
-
-        var tr18 = document.getElementById("tr18");
-        tr18.addEventListener("click", function() {
-          img1.style.display = "none";
-          img2.style.display = "none";
-          img3.style.display = "none";
-          imageContainer.style.display = "none";
-          detailContainer.style.display = "none";
-          buttonContainer.style.display = "none";
-          var img = document.getElementById(api[17].category)
-          img.style.display = "block";
-          roadText.innerText = "도로: " + api[17].location;
-          dangerText.innerText = "위험 요소 종류: " + category[api[17].category];
-          percentageText.innerText = "위험도: " + api[17].danger_score + "%";
-          accuracyText.innerText = "정확도: " + api[17].accuracy;
-          imageContainer.style.display = "block";
-          detailContainer.style.display = "block";
-          buttonContainer.style.display = "grid";
-          sessionStorage.loca = api[17].location;
-        });
-
-        var tr19 = document.getElementById("tr19");
-        tr19.addEventListener("click", function() {
-          img1.style.display = "none";
-          img2.style.display = "none";
-          img3.style.display = "none";
-          imageContainer.style.display = "none";
-          detailContainer.style.display = "none";
-          buttonContainer.style.display = "none";
-          var img = document.getElementById(api[18].category)
-          img.style.display = "block";
-          roadText.innerText = "도로: " + api[18].location;
-          dangerText.innerText = "위험 요소 종류: " + category[api[18].category];
-          percentageText.innerText = "위험도: " + api[18].danger_score + "%";
-          accuracyText.innerText = "정확도: " + api[18].accuracy;
-          imageContainer.style.display = "block";
-          detailContainer.style.display = "block";
-          buttonContainer.style.display = "grid";
-          sessionStorage.loca = api[18].location;
-        });
-
-        var tr20 = document.getElementById("tr20");
-        tr20.addEventListener("click", function() {
-          img1.style.display = "none";
-          img2.style.display = "none";
-          img3.style.display = "none";
-          imageContainer.style.display = "none";
-          detailContainer.style.display = "none";
-          buttonContainer.style.display = "none";
-          var img = document.getElementById(api[19].category)
-          img.style.display = "block";
-          roadText.innerText = "도로: " + api[19].location;
-          dangerText.innerText = "위험 요소 종류: " + category[api[19].category];
-          percentageText.innerText = "위험도: " + api[19].danger_score + "%";
-          accuracyText.innerText = "정확도: " + api[19].accuracy;
-          imageContainer.style.display = "block";
-          detailContainer.style.display = "block";
-          buttonContainer.style.display = "grid";
-          sessionStorage.loca = api[19].location;
         });
       }
 
