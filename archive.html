@@ -20,8 +20,8 @@
     </div>
     <div class="leftContainer">
       <div class="filterContainer">
-        <input type="text" name="filter" class="filter" placeholder="필터를 입력하세요. (예: 경부고속도로)">
-        <button class="filterBtn" class="filterBtn">입력</button>
+        <input type="text" name="filter" class="filter" placeholder="필터를 입력하세요. (예: 경부고속도로)" id="filter">
+        <button class="filterBtn" class="filterBtn" id="filterBtn">입력</button>
       </div>
       <div class="tableContainer">
         <table>
@@ -32,26 +32,22 @@
               <th>위험도</th>
             </tr>
           </thead>
-          <tbody>
-            <tr id="tr1">
-              <td>경부고속도로</td>
-              <td>포트홀</td>
-              <td>98.5%</td>
-            </tr>
+          <tbody id="tbody">
           </tbody>
         </table>
       </div>
     </div>
     <div class="rightContainer">
       <div class="imageContainer" id="imageContainer">
-        <img src="asset\pothole.png" alt="">
+        <img src="asset\pothole.png" alt="" id="pothole" class="potholeImg">
+        <img src="asset\animal.jpg" alt="" id="animal" class="animalImg">
+        <img src="asset\garbage.jpg" alt="" id="garbage" class="garbageImg">
       </div>
       <div class="detailContainer" id="detailContainer">
-        <h2>도로: 경부고속도로</h2>
-        <h2>위험 요소 종류: 포트홀</h2>
-        <h2>위험도: 98.5%</h2>
-        <h2>처리 여부: 이전 기록 없음</h2>
-        <h2>신고 횟수: 10</h2>
+        <h2 id="roadText">도로: 경부고속도로</h2>
+        <h2 id="dangerText">위험 요소 종류: 포트홀</h2>
+        <h2 id="percentageText">위험도: 98.5%</h2>
+        <h2 id="accuracyText">정확도:</h2>
       </div>
       <div class="buttonContainer" id="buttonContainer">
         <button type="button" name="button" class="alertBtn" onclick="window.open('https://www.ex.co.kr/')">공공기관 신고</button>
@@ -62,4 +58,5 @@
   </body>
   <script src="js\archive.js" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </html>

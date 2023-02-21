@@ -1,0 +1,82 @@
+[
+	{
+		"category": "garbage",
+		"location": "서해안고속도로",
+		"accuracy": 0.4,
+		"quick": false,
+		"complete": false,
+		"danger_score": 36
+	},
+	{
+		"category": "pothole",
+		"location": "중부내륙고속도로",
+		"accuracy": 0.79,
+		"quick": false,
+		"complete": true,
+		"danger_score": 97
+	},
+	{
+		"category": "garbage",
+		"location": "중앙고속도로",
+		"accuracy": 0.42,
+		"quick": false,
+		"complete": false,
+		"danger_score": 87
+	},
+	{
+		"category": "animal",
+		"location": "경부고속도로",
+		"accuracy": 0.25,
+		"quick": false,
+		"complete": true,
+		"danger_score": 56
+	},
+	{
+		"category": "garbage",
+		"location": "경부고속도로",
+		"accuracy": 0.97,
+		"quick": true,
+		"complete": true,
+		"danger_score": 24
+	},
+	{
+		"category": "garbage",
+		"location": "경부고속도로",
+		"accuracy": 0.49,
+		"quick": true,
+		"complete": false,
+		"danger_score": 64
+	},
+	{
+		"category": "animal",
+		"location": "제2중부고속도로",
+		"accuracy": 0.6,
+		"quick": true,
+		"complete": true,
+		"danger_score": 88
+	},
+	{
+		"category": "pothole",
+		"location": "중부내륙고속도로",
+		"accuracy": 0.76,
+		"quick": true,
+		"complete": false,
+		"danger_score": 3
+	},
+	{
+		"category": "pothole",
+		"location": "경부고속도로",
+		"accuracy": 0.76,
+		"quick": true,
+		"complete": true,
+		"danger_score": 19
+	},
+	{
+		"category": "garbage",
+		"location": "제2중부고속도로",
+		"accuracy": 0.19,
+		"quick": false,
+		"complete": false,
+		"danger_score": 38
+	}
+]

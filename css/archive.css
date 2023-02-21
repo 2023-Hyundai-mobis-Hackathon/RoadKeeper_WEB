@@ -143,3 +143,15 @@ button {
   border: none;
   font-family: 'IBM Plex Sans KR', sans-serif;
 }
+
+.potholeImg {
+  display: none;
+}
+
+.animalImg {
+  display: none;
+}
+
+.garbageImg {
+  display: none;
+}
