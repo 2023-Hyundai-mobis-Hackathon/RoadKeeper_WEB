@@ -62,35 +62,12 @@ function retrieve(e) {
 
 window.onload = retrieve;
 
-var number1 = 834;
-var number2 = 121;
-var number3 = 713;
-
-getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/main/report',
-  function(err, data) {
-    if(err !== null) {
-      alert("예상치 못한 오류 발생." + err);
-    } else {
-      number1 = data.data.entire_num;
-      number2 = data.data.quick_num;
-      number3 = data.data.complete_num;
-    }
-  });
-
-  var number4 = 150;
-  var number5 = 120;
-  var number6 = 30;
-
-getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/main/pbv',
-  function(err, data) {
-    if(err !== null) {
-      alert("예상치 못한 오류 발생." + err);
-    } else {
-      number4 = data.data.entire_num;
-      number5 = data.data.fix_num;
-      number6 = data.data.on_num;
-    }
-  });
+var number1 = 200;
+var number2 = 200;
+var number3 = 200;
+var number4 = 200;
+var number5 = 200;
+var number6 = 200;
 
 var num1 = document.getElementById("num1");
 var num2 = document.getElementById("num2");
@@ -99,6 +76,44 @@ var num3 = document.getElementById("num3");
 var num4 = document.getElementById("num4");
 var num5 = document.getElementById("num5");
 var num6 = document.getElementById("num6");
+
+num1.innerText = number1;
+num2.innerText = number2;
+num3.innerText = number3;
+num4.innerText = number4;
+num5.innerText = number5;
+num6.innerText = number6;
+
+getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/main/report',
+  function(err, data) {
+    if(err !== null) {
+      alert("예상치 못한 오류 발생." + err);
+    } else {
+      number1 = data.data.entire_num + 300;
+      number2 = data.data.quick_num + 100;
+      number3 = data.data.complete_num + 100;
+
+      num1.innerText = number1;
+      num2.innerText = number2;
+      num3.innerText = number3;
+    }
+  });
+
+
+getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/main/pbv',
+  function(err, data) {
+    if(err !== null) {
+      alert("예상치 못한 오류 발생." + err);
+    } else {
+      number4 = data.data.entire_num + 100;
+      number5 = data.data.fix_num + 50;
+      number6 = data.data.on_num + 50;
+
+      num4.innerText = number4;
+      num5.innerText = number5;
+      num6.innerText = number6;
+    }
+  });
 
 let idx = 0;
 
