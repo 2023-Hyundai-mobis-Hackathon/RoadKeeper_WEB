@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css\dispatch.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
     </style>
   </head>
   <body>
@@ -21,33 +22,53 @@
     <div class="middle">
       <div class="mapContainer">
         <img src="asset\map.png" alt="" class="map">
-        <img src="asset\car.png" alt="" class="car1">
-        <img src="asset\car.png" alt="" class="car2">
-        <img src="asset\car.png" alt="" class="car3">
+        <img src="asset\car.png" alt="" class="car1" id="car1">
+        <img src="asset\car.png" alt="" class="car2" id="car2">
+        <img src="asset\car.png" alt="" class="car3" id="car3">
+        <img src="asset\car.png" alt="" class="car4" id="car4">
+        <img src="asset\car.png" alt="" class="car5" id="car5">
+        <img src="asset\placeholder.png" alt="" class="pin" id="pin">
       </div>
         <div class="tableContainer">
           <table>
             <thead>
               <tr>
                 <th>ID</th>
+                <th>도로</th>
                 <th>상태</th>
               </tr>
             </thead>
             <tbody>
               <tr id="tr1">
                 <td>01</td>
-                <td id="td1">대기 중</td>
+                <td id="road1"></td>
+                <td id="stat1"></td>
               </tr>
               <tr id="tr2">
                 <td>02</td>
-                <td id="td2">대기 중</td>
+                <td id="road2"></td>
+                <td id="stat2"></td>
               </tr>
-              <tr id="tr3">
+              <tr id="t31">
                 <td>03</td>
-                <td id="td3">대기 중</td>
+                <td id="road3"></td>
+                <td id="stat3"></td>
+              </tr>
+              <tr id="tr4">
+                <td>04</td>
+                <td id="road4"></td>
+                <td id="stat4"></td>
+              </tr>
+              <tr id="tr5">
+                <td>05</td>
+                <td id="road5"></td>
+                <td id="stat5"></td>
               </tr>
             </tbody>
           </table>
+          <div class="statusContainer">
+            <h2 id="statusText"></h2>
+          </div>
         </div>
     </div>
   </body>

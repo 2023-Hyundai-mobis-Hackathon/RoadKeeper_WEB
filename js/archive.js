@@ -69,6 +69,7 @@ getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/archive/da
         imageContainer.style.display = "block";
         detailContainer.style.display = "block";
         buttonContainer.style.display = "block";
+        sessionStorage.loca = api[0].location;
       });
 
       var tr2 = document.getElementById("tr2");
@@ -82,6 +83,7 @@ getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/archive/da
         imageContainer.style.display = "block";
         detailContainer.style.display = "block";
         buttonContainer.style.display = "block";
+        sessionStorage.loca = api[1].location;
       });
 
       var tr3 = document.getElementById("tr3");
@@ -95,6 +97,7 @@ getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/archive/da
         imageContainer.style.display = "block";
         detailContainer.style.display = "block";
         buttonContainer.style.display = "block";
+        sessionStorage.loca = api[2].location;
       });
 
       var tr4 = document.getElementById("tr4");
@@ -108,6 +111,7 @@ getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/archive/da
         imageContainer.style.display = "block";
         detailContainer.style.display = "block";
         buttonContainer.style.display = "block";
+        sessionStorage.loca = api[3].location;
       });
 
       var tr5 = document.getElementById("tr5");
@@ -121,6 +125,7 @@ getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/archive/da
         imageContainer.style.display = "block";
         detailContainer.style.display = "block";
         buttonContainer.style.display = "block";
+        sessionStorage.loca = api[4].location;
       });
 
       var tr6 = document.getElementById("tr6");
@@ -134,6 +139,7 @@ getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/archive/da
         imageContainer.style.display = "block";
         detailContainer.style.display = "block";
         buttonContainer.style.display = "block";
+        sessionStorage.loca = api[5].location;
       });
 
       var tr7 = document.getElementById("tr7");
@@ -147,6 +153,7 @@ getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/archive/da
         imageContainer.style.display = "block";
         detailContainer.style.display = "block";
         buttonContainer.style.display = "block";
+        sessionStorage.loca = api[6].location;
       });
 
       var tr8 = document.getElementById("tr8");
@@ -160,6 +167,7 @@ getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/archive/da
         imageContainer.style.display = "block";
         detailContainer.style.display = "block";
         buttonContainer.style.display = "block";
+        sessionStorage.loca = api[7].location;
       });
 
       var tr9 = document.getElementById("tr9");
@@ -173,19 +181,21 @@ getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/archive/da
         imageContainer.style.display = "block";
         detailContainer.style.display = "block";
         buttonContainer.style.display = "block";
+        sessionStorage.loca = api[8].location;
       });
 
       var tr10 = document.getElementById("tr10");
       tr10.addEventListener("click", function() {
-        var img = document.getElementById(api[10].category)
+        var img = document.getElementById(api[9].category)
         img.style.display = "block";
-        roadText.innerText = "도로: " + api[10].location;
-        dangerText.innerText = "위험 요소 종류: " + category[api[10].category];
-        percentageText.innerText = "위험도: " + api[10].danger_score + "%";
-        accuracyText.innerText = "정확도: " + api[10].accuracy;
+        roadText.innerText = "도로: " + api[9].location;
+        dangerText.innerText = "위험 요소 종류: " + category[api[9].category];
+        percentageText.innerText = "위험도: " + api[9].danger_score + "%";
+        accuracyText.innerText = "정확도: " + api[9].accuracy;
         imageContainer.style.display = "block";
         detailContainer.style.display = "block";
         buttonContainer.style.display = "block";
+        sessionStorage.loca = api[9].location;
       });
     }
 });

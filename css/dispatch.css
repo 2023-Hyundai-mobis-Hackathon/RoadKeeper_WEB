@@ -49,37 +49,58 @@ h1 {
   position: absolute;
   width: 20px;
   margin-left: -250px;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 .car2 {
   position: absolute;
   width: 20px;
   margin-left: -230px;
-  margin-top: 230px;
+  margin-top: 130px;
 }
 
 .car3 {
   position: absolute;
   width: 20px;
   margin-left: -200px;
-  margin-top: 260px;
+  margin-top: 160px;
+}
+
+.car4 {
+  position: absolute;
+  width: 20px;
+  margin-left: -235px;
+  margin-top: 200px;
+}
+
+.car5 {
+  position: absolute;
+  width: 20px;
+  margin-left: -220px;
+  margin-top: 180px;
+}
+
+.pin {
+  position: absolute;
+  width: 20px;
+  margin-left: -210px;
+  margin-top: 190px;
 }
 
 .middle {
   display: grid;
   grid-template-columns: 500px 500px;
-  padding-left: 300px;
+  padding-left: 250px;
   margin-top: 50px;
 }
 
 table {
   background-color: white;
-  width: 300px;
+  width: 500px;
   border-collapse: collapse;
   border: 0;
   font-family: 'IBM Plex Sans KR', sans-serif;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 th {
   border: 1.5px solid black;
@@ -90,4 +111,16 @@ th {
 td {
   border: 1.5px solid black;
   background-clip: padding-box;
+}
+
+h2 {
+  background-color: black;
+  margin-left: 30px;
+  width: 480px;
+  margin-top: 50px;
+  height: 250px;
+  color: black;
+  padding: 10px;
+  color:white;
+  font-family: 'Noto Sans KR', sans-serif;
 }
