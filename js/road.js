@@ -36,7 +36,7 @@ function renderTable(id, data) {
   document.getElementById("tbody").innerHTML = trList;
 }
 
-getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/info/road',
+getJSON('http://ec2-35-77-220-13.ap-northeast-1.compute.amazonaws.com/info/road',
   function(err, data) {
     if(err !== null) {
       alert("예상치 못한 오류 발생." + err);

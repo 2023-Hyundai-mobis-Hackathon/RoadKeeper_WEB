@@ -84,7 +84,7 @@ num4.innerText = number4;
 num5.innerText = number5;
 num6.innerText = number6;
 
-getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/main/report',
+getJSON('http://ec2-35-77-220-13.ap-northeast-1.compute.amazonaws.com/main/report',
   function(err, data) {
     if(err !== null) {
       alert("예상치 못한 오류 발생." + err);
@@ -100,7 +100,7 @@ getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/main/repor
   });
 
 
-getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/main/pbv',
+getJSON('http://ec2-35-77-220-13.ap-northeast-1.compute.amazonaws.com/main/pbv',
   function(err, data) {
     if(err !== null) {
       alert("예상치 못한 오류 발생." + err);
@@ -176,7 +176,25 @@ const repeatFunc2 = function() {
   }, 5000);
 }
 
-
 repeatFunc();
 repeatFunc1();
 repeatFunc2();
+
+var c1 = document.getElementById("c1");
+var c2 = document.getElementById("c2");
+var c3 = document.getElementById("c3");
+
+c1.addEventListener("click", function() {
+  sessionStorage.loca = "논산천안고속도로";
+  location.href = "dispatch.html";
+})
+
+c2.addEventListener("click", function() {
+  sessionStorage.loca = "중부고속도로";
+  location.href = "dispatch.html";
+})
+
+c3.addEventListener("click", function() {
+  sessionStorage.loca = "경부고속도로";
+  location.href = "dispatch.html";
+})

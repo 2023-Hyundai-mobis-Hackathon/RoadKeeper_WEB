@@ -49,7 +49,7 @@ var dangerText = document.getElementById("dangerText");
 var percentageText = document.getElementById("percentageText");
 var accuracyText = document.getElementById("accuracyText");
 
-getJSON('http://ec2-18-183-5-142.ap-northeast-1.compute.amazonaws.com/archive/danger',
+getJSON('http://ec2-35-77-220-13.ap-northeast-1.compute.amazonaws.com/archive/danger',
   function(err, data) {
     if(err !== null) {
       alert("예상치 못한 오류 발생." + err);

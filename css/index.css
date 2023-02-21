@@ -143,3 +143,32 @@ h5 {
   text-align: left;
   font-family: 'IBM Plex Sans KR', sans-serif;
 }
+
+h6 {
+  position: absolute;
+  background-color: black;
+  color: white;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+.c1 {
+  margin-top: -200px;
+  margin-left: 130px;
+  color: red;
+}
+
+.c2 {
+  margin-top: -250px;
+  margin-left: 180px;
+  color: skyblue;
+}
+
+.c3 {
+  margin-top: -280px;
+  margin-left: 110px;
+}
+
+img {
+  position: relative;
+}
