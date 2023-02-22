@@ -1,0 +1,108 @@
+html {
+  background-color: #181823;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+button {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.header {
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 500px 500px 400px;
+  grid-template-rows: 100px;
+}
+
+.logo {
+  width: 150px;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.tabContainer {
+  display: inline-block;
+  margin-top: 18px;
+  padding-left: 70px;
+}
+
+.tab {
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+  background-color: #181823;
+  border: none;
+  color: white;
+}
+
+.map {
+  position: relative;
+  margin-bottom: 110px;
+}
+
+.pin {
+  position: absolute;
+  width: 20px;
+  margin-left: -210px;
+  margin-top: 190px;
+}
+
+.middle {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  padding-left: 250px;
+  margin-top: 50px;
+}
+
+table {
+  background-color: white;
+  width: 500px;
+  border-collapse: collapse;
+  border: 0;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  margin-left: 30px;
+}
+th {
+  border: 1.5px solid black;
+  background-clip: padding-box;
+  background-color: #E9F8F9;
+}
+
+td {
+  border: 1.5px solid black;
+  background-clip: padding-box;
+}
+
+h2 {
+  background-color: #537FE7;
+  margin-left: 30px;
+  width: 480px;
+  margin-top: 50px;
+  height: 250px;
+  color: black;
+  padding: 10px;
+  color:white;
+}
+
+input {
+  margin-left: 30px;
+  width: 490px;
+}
+
+.noticeBtn {
+  margin-left: -300px;
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: middle;
+  background-color: #537FE7;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
