@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=kr dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>도로 안전 지킴이</title>
+    <link rel="stylesheet" href="css\report.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="asset\logo.png" class="logo" onclick="location.href='index.html'">
+      <h1>도로 안전 지킴이 관리 시스템</h1>
+      <div class="tabContainer">
+        <button type="button" name="button" class="tab" onclick="location.href='archive.html'">기록</button>
+        <button type="button" name="button" class="tab" onclick="location.href='info.html'">정보</button>
+        <button type="button" name="button" class="tab" onclick="location.href='plot.html'">통계</button>
+      </div>
+      <div class="middle">
+        <div class="left">
+          <h2>신고하기</h2>
+          <h3>이름: 박채린</h3>
+          <h3>전화번호: 010-0000-0000</h3>
+          <h3 id="location1"></h3>
+          <h3>사진</h3>
+          <img src="asset\animal.jpg" id="animal">
+          <img src="asset\garbage.jpg" id="garbage">
+          <img src="asset\pothole.png" id="pothole">
+        </div>
+        <div class="right">
+          <h3>내용 입력</h3>
+          <input type="text" name="context" placeholder="구체적인 신고 내용을 입력하세요."><br>
+          <button type="button" name="button" id="reportBtn">신고하기</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js\report.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</html>

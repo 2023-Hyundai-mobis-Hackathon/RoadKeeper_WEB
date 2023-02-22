@@ -1,0 +1,81 @@
+html {
+  background-color: #181823;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+button {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.header {
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 500px 500px 400px;
+  grid-template-rows: 100px;
+}
+
+.logo {
+  width: 150px;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.tabContainer {
+  display: inline-block;
+  margin-top: 18px;
+  padding-left: 70px;
+}
+
+.tab {
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+  background-color: #181823;
+  border: none;
+  color: white;
+}
+
+.middle {
+  background-color: white;
+  padding: 30px;
+  width: 1000px;
+  height: 600px;
+  margin-top: 50px;
+  margin-left: 180px;
+  display: grid;
+  grid-template-columns: 500px 500px;
+}
+
+.middle h2 {
+  color: blue;
+}
+
+.middle .right {
+  margin-top: 50px;
+}
+
+.middle img {
+  width: 400px;
+  display: none;
+}
+
+input {
+  width: 400px;
+  height: 200px;
+}
+
+.middle button {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 200px;
+  background-color: #537FE7;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  height: 50px;
+}

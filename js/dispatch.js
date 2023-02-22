@@ -114,3 +114,195 @@ tr1.addEventListener("click", function() {
     }, 9000);
   }
 })
+
+tr2.addEventListener("click", function() {
+  if(stat_list[1] == 1) {
+    statusText.innerText = "";
+    var text = "2번 차량 상태 업데이트를 시작합니다. \n"
+    stat_list[1] = 2;
+    stat2.innerText = stat[stat_list[1]];
+    car1.style.display = "none";
+    car3.style.display = "none";
+    car4.style.display = "none";
+    car5.style.display = "none";
+    statusText.innerText = text;
+
+    setTimeout(function() {
+      car2.style.marginTop = "160px";
+      car2.style.marginLeft = "-240px";
+      text += "목표 지점까지 이동 중... \n";
+      statusText.innerText = text;
+    }, 2000);
+
+    setTimeout(function() {
+      car2.style.marginTop = "170px";
+      car2.style.marginLeft = "-230px";
+    }, 3000);
+
+    setTimeout(function() {
+      car2.style.marginTop = "180px";
+      car2.style.marginLeft = "-220px";
+    }, 4000);
+
+    setTimeout(function() {
+      car2.style.marginTop = "190px";
+      car2.style.marginLeft = "-210px";
+      text += "도착 완료 \n";
+      statusText.innerText = text;
+    }, 5000);
+
+    setTimeout(function() {
+      text += "수리를 시작합니다. \n";
+      text += "수리 중... \n"
+      statusText.innerText = text;
+    }, 6000);
+
+    setTimeout(function() {
+      text += "수리 완료. \n";
+      statusText.innerText = text;
+      stat_list[1] = 1;
+      stat2.innerText = stat[stat_list[1]];
+    }, 9000);
+  }
+})
+
+tr3.addEventListener("click", function() {
+  if(stat_list[2] == 1) {
+    statusText.innerText = "";
+    var text = "3번 차량 상태 업데이트를 시작합니다. \n"
+    stat_list[2] = 2;
+    stat3.innerText = stat[stat_list[0]];
+    car2.style.display = "none";
+    car1.style.display = "none";
+    car4.style.display = "none";
+    car5.style.display = "none";
+    statusText.innerText = text;
+
+    setTimeout(function() {
+      car3.style.marginTop = "160px";
+      car3.style.marginLeft = "-240px";
+      text += "목표 지점까지 이동 중... \n";
+      statusText.innerText = text;
+    }, 2000);
+
+    setTimeout(function() {
+      car3.style.marginTop = "170px";
+      car3.style.marginLeft = "-230px";
+    }, 3000);
+
+    setTimeout(function() {
+      car3.style.marginTop = "180px";
+      car3.style.marginLeft = "-220px";
+    }, 4000);
+
+    setTimeout(function() {
+      car3.style.marginTop = "190px";
+      car3.style.marginLeft = "-210px";
+      text += "도착 완료 \n";
+      statusText.innerText = text;
+    }, 5000);
+
+    setTimeout(function() {
+      text += "수리를 시작합니다. \n";
+      text += "수리 중... \n"
+      statusText.innerText = text;
+    }, 6000);
+
+    setTimeout(function() {
+      text += "수리 완료. \n";
+      statusText.innerText = text;
+      stat_list[2] = 1;
+      stat3.innerText = stat[stat_list[2]];
+    }, 9000);
+  }
+})
+
+tr4.addEventListener("click", function() {
+  if(stat_list[3] == 1) {
+    statusText.innerText = "";
+    var text = "4번 차량 상태 업데이트를 시작합니다. \n"
+    stat_list[3] = 2;
+    stat4.innerText = stat[stat_list[3]];
+    car2.style.display = "none";
+    car3.style.display = "none";
+    car1.style.display = "none";
+    car5.style.display = "none";
+    statusText.innerText = text;
+
+    setTimeout(function() {
+      car4.style.marginTop = "160px";
+      car4.style.marginLeft = "-240px";
+      text += "목표 지점까지 이동 중... \n";
+      statusText.innerText = text;
+    }, 2000);
+
+    setTimeout(function() {
+      car4.style.marginTop = "170px";
+      car4.style.marginLeft = "-230px";
+    }, 3000);
+
+    setTimeout(function() {
+      car4.style.marginTop = "180px";
+      car4.style.marginLeft = "-220px";
+    }, 4000);
+
+    setTimeout(function() {
+      car4.style.marginTop = "190px";
+      car4.style.marginLeft = "-210px";
+      text += "도착 완료 \n";
+      statusText.innerText = text;
+    }, 5000);
+
+    setTimeout(function() {
+      text += "수리를 시작합니다. \n";
+      text += "수리 중... \n"
+      statusText.innerText = text;
+    }, 6000);
+
+    setTimeout(function() {
+      text += "수리 완료. \n";
+      statusText.innerText = text;
+      stat_list[3] = 1;
+      stat4.innerText = stat[stat_list[3]];
+    }, 9000);
+  }
+})
+
+tr5.addEventListener("click", function() {
+  if(stat_list[4] == 1) {
+    statusText.innerText = "";
+    var text = "5번 차량 상태 업데이트를 시작합니다. \n"
+    stat_list[4] = 2;
+    stat5.innerText = stat[stat_list[4]];
+    car2.style.display = "none";
+    car3.style.display = "none";
+    car4.style.display = "none";
+    car1.style.display = "none";
+    statusText.innerText = text;
+
+    setTimeout(function() {
+      car5.style.marginTop = "180px";
+      car5.style.marginLeft = "-220px";
+    }, 2000);
+
+    setTimeout(function() {
+      car5.style.marginTop = "190px";
+      car5.style.marginLeft = "-210px";
+      text += "도착 완료 \n";
+      statusText.innerText = text;
+    }, 3000);
+
+    setTimeout(function() {
+      text += "수리를 시작합니다. \n";
+      text += "수리 중... \n"
+      statusText.innerText = text;
+    }, 4000);
+
+    setTimeout(function() {
+      text += "수리 완료. \n";
+      statusText.innerText = text;
+      stat_list[4] = 1;
+      stat5.innerText = stat[stat_list[4]];
+    }, 7000);
+  }
+})
